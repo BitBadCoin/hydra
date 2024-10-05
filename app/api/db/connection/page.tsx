@@ -12,7 +12,7 @@ const sequelize = new Sequelize({
     clientMinMessages: 'notice',
   });
 
-export default function Page() {
+export default async function Page() {
 
     try {
         await sequelize.authenticate();
