@@ -1,8 +1,7 @@
 import { Sequelize } from '@sequelize/core';
-import { PostgresDialect } from '@sequelize/postgres';
 
 const sequelize = new Sequelize({
-    dialect: PostgresDialect,
+    dialect: "postgres",
     database: 'hydra',
     user: 'ortem',
     password: 'p@ss4@rTeM!(*%',
