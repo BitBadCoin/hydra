@@ -1,8 +1,9 @@
-import { Sequelize } from '@sequelize/core';
+import { Sequelize } from "../../../../node_modules/@sequelize/core";
+import { PostgresDialect } from "../../../../node_modules/@sequelize/postgres";
 
 const sequelize = new Sequelize({
-    dialect: "postgres",
-    database: 'hydra',
+    dialect: PostgresDialect,
+    database: "hydra",
     user: 'ortem',
     password: 'p@ss4@rTeM!(*%',
     host: 'localhost',
