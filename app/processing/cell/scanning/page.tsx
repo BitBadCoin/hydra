@@ -1,3 +1,8 @@
 export default function Page() {
-    return <h1>Hello, processing/cell/scanning!</h1>
+  return (
+    <form action = '/' method = 'GET'>
+        <input name="query" />
+        <button type="submit">Search</button>
+    </form>
+    )
 }
