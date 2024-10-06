@@ -19,14 +19,6 @@ export default async function Page() {
         );
     }
 
-    try {
-        await sequelize.close();
-    } catch (error) {
-        return (
-            `<h5>Connection close error: ${error}</h5>`
-        );
-    }
-
     return (
         `<h5>Connection check successfull.</h5>`
     );
