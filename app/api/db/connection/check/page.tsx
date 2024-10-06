@@ -10,8 +10,6 @@ const sequelize = new Sequelize(
         dialectModule: pg,
   });
 
-
-
 import { useState } from 'react';
 
 export default async function Page() {
@@ -24,7 +22,7 @@ export default async function Page() {
 
     return (
         <input type='text' value = {count}/>
-        <button onClick={handleClick}/>
+        <button onClick={handleClick}>Тык Тык</button>
     )
 
 
