@@ -7,6 +7,7 @@ const sequelize = new Sequelize(
     'p@ss4@rTeM!(*%', {
         host: 'localhost',
         dialect: 'postgres',
+        dialectModule: pg,
   });
 
 export default async function Page() {
