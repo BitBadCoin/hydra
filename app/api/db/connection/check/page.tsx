@@ -21,8 +21,9 @@ export default async function Page() {
     }
 
     return (
-        <input type='text' value = {count}/>
-        <button onClick={handleClick}>Тык Тык</button>
+        <button onClick={handleClick}>
+            You pressed me {count} times
+        </button>
     )
 
 
