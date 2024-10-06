@@ -1,4 +1,4 @@
-const Sequelize = require('sequelize');
+/* const Sequelize = require('sequelize');
 const pg = require('pg');
 
 const sequelize = new Sequelize(
@@ -9,6 +9,22 @@ const sequelize = new Sequelize(
         dialect: 'postgres',
         dialectModule: pg,
   });
+
+*/
+
+import { Sequelize } from '@sequelize/core';
+import { PostgresDialect } from '@sequelize/postgres';
+
+const sequelize = new Sequelize({
+  dialect: PostgresDialect,
+  database: 'hydra',
+  user: 'ortem',
+  password: 'p@ss4@rTeM!(*%',
+  host: 'localhost',
+  port: 5432,
+  ssl: true,
+  clientMinMessages: 'notice',
+});
 
 export default async function Page() {
 
