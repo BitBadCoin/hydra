@@ -10,8 +10,35 @@ const sequelize = new Sequelize(
         dialectModule: pg,
   });
 
+  function Button({
+        title,
+        clickFnc,
+    }:{
+        title: string,
+        clickFnc: function
+    }){
+        return (
+            <button onclick = {clickFnc}>{title}</button>
+        )
+    };
+
+import { useState } from 'react';
+
 export default async function Page() {
 
+    const [count, setCount] = useState(0);
+
+    function handleClick() {
+        setCount(count + 1);
+    }
+
+    return (
+        <input type='text' value = {count}/>
+        <Button title='TEST' clickFnc={handleClick}></Button>
+    )
+
+
+    /*
     try {
         await sequelize.authenticate();
     } catch (error) {
@@ -23,4 +50,5 @@ export default async function Page() {
     return (
         <h5>Connection check successfull.</h5>
     );
+    */
 }
