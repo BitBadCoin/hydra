@@ -15,7 +15,7 @@ const sequelize = new Sequelize(
         clickFnc,
     }:{
         title: string,
-        clickFnc: ()
+        clickFnc: void;
     }){
         return (
             <button onclick = {clickFnc}>{title}</button>
