@@ -10,7 +10,7 @@ const sequelize = new Sequelize(
         dialectModule: pg,
   });
 
-/* export default */ async function Page() {
+export default async function Page() {
 
     try {
         await sequelize.authenticate();
@@ -25,5 +25,3 @@ const sequelize = new Sequelize(
     );
 
 }
-
-page();
