@@ -16,12 +16,12 @@ export default async function Page() {
         await sequelize.authenticate();
     } catch (error) {
         return (
-            `<h5>Connection authenticate error: ${error}</h5>`
+            <h5>Connection authenticate error: {error}</h5>
         );
     }
 
     return (
-        `<h5>Connection check successfull.</h5>`
+        <h5>Connection check successfull.</h5>
     );
 
 }
