@@ -7,7 +7,6 @@ const sequelize = new Sequelize(
     'p@ss4@rTeM!(*%', {
         host: 'localhost',
         dialect: 'postgres',
-        dialectModule: pg,
   });
 
 export default async function Page() {
@@ -23,5 +22,4 @@ export default async function Page() {
     return (
         <h5>Connection check successfull.</h5>
     );
-
 }
