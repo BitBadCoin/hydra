@@ -10,17 +10,7 @@ const sequelize = new Sequelize(
         dialectModule: pg,
   });
 
-  function Button({
-        title,
-        clickFnc,
-    }:{
-        title: string,
-        clickFnc: void;
-    }){
-        return (
-            <button onclick = {clickFnc}>{title}</button>
-        )
-    };
+
 
 import { useState } from 'react';
 
@@ -34,7 +24,7 @@ export default async function Page() {
 
     return (
         <input type='text' value = {count}/>
-        <Button title='TEST' clickFnc={handleClick}></Button>
+        <button onClick={handleClick}/>
     )
 
 
