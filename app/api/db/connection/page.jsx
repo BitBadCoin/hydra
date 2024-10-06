@@ -1,5 +1,5 @@
-import {Sequelize} from 'sequelize';
-import {pg} from 'pg';
+const Sequelize = require('sequelize');
+const pg = require('pg');
 
 const sequelize = new Sequelize(
     "hydra",
