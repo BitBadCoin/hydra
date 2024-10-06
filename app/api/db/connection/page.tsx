@@ -1,15 +1,11 @@
-import { Sequelize } from "../../../../node_modules/@sequelize/core";
-import { PostgresDialect } from "../../../../node_modules/@sequelize/postgres";
+import { Sequelize } from 'sequelize';
 
-const sequelize = new Sequelize({
-    dialect: PostgresDialect,
-    database: "hydra",
-    user: 'ortem',
-    password: 'p@ss4@rTeM!(*%',
-    host: 'localhost',
-    port: 5432,
-    ssl: true,
-    clientMinMessages: 'notice',
+const sequelize = new Sequelize(
+    "hydra",
+    'ortem',
+    'p@ss4@rTeM!(*%', {
+        host: 'localhost',
+        dialect: 'postgres'
   });
 
 export default async function Page() {
