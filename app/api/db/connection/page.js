@@ -8,7 +8,8 @@ const sequelize = new Sequelize(
     'ortem',
     'p@ss4@rTeM!(*%', {
         host: 'localhost',
-        dialect: 'postgres'
+        dialect: 'postgres',
+        dialectModule: pg,
   });
 
 export default async function Page() {
