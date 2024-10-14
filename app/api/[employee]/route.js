@@ -1,6 +1,6 @@
 export async function GET(request) {
 
-  console.log(request.url);
+  console.log(request.params);
 
   return Response.json({text: "Hello world!", error: 0})
   
