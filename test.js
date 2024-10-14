@@ -10,12 +10,12 @@ const employees = [
     }
 ]
 
-(async () => {
+(async function () {
 
-    const {Test} = await db();
+    const { Test } = await db();
 
     for (const [name, number] of Object.entries(employees)) {
-        console.log({name, number});
+        console.log({ name, number });
     }
 
 })()
