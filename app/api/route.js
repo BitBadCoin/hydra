@@ -2,7 +2,7 @@ export async function GET(request) {
 
   console.log(request.url);
 
-  return Response.text("Hello world!")
+  return Response.json({text: "Hello world!", error: 0})
   
 }
  
