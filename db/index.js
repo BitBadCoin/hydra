@@ -1,8 +1,8 @@
 const sequelize = require('./associations');
 
-module.exports = async (alter = true) => {
+module.exports = async () => {
     
-    await sequelize.sync({alter: alter})
+    await sequelize.sync()
     
     return sequelize.models;
 }
