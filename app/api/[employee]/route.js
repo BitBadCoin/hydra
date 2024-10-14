@@ -1,4 +1,4 @@
-export async function GET(request, context: { params }) {
+export async function GET(request) {
   return "Hello world!"
 }
  
