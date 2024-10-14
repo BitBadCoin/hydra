@@ -10,7 +10,7 @@ const employees = [
     }
 ]
 
-(async function () {
+async function start() {
 
     const { Test } = await db();
 
@@ -18,4 +18,6 @@ const employees = [
         console.log({ name, number });
     }
 
-})()
+}
+
+start();
