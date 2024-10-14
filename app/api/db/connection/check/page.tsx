@@ -12,6 +12,8 @@ const sequelize = new Sequelize(
 
 import { useState } from 'react';
 
+use client
+
 export default async function Page() {
 
     const [count, setCount] = useState(0);
