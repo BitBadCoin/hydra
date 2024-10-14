@@ -1,9 +1,14 @@
+const db = require("../../../db")
+
 export async function GET(request, context) {
 
-  console.log(request);
-  console.log(context);
+  const employee = context.params.employee;
 
-  return Response.json({test: "OK"})
+  const {Test} = await db();
+
+  const item = await Test.findById(employee);
+
+  return Response.json(item);
   
 }
  
