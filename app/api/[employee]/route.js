@@ -6,7 +6,7 @@ export async function GET(request, context) {
 
   const {Test} = await db();
 
-  const item = await Test.findById(employee);
+  const item = await Test.findByPk(employee);
 
   return Response.json(item);
   
