@@ -1,4 +1,4 @@
-const {Test} = require("../../../database/models")
+const {Test} = require("../../../../database/models")
 
 export async function GET(request, context) {
 
