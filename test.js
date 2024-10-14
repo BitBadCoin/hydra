@@ -18,7 +18,7 @@ async function start() {
 
     for (const user of Object.entries(employees)) {
         
-        const user = await Test.findOrCreate({
+        const u = await Test.findOrCreate({
             where: user
         })
     }
