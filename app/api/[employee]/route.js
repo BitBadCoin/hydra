@@ -1,8 +1,9 @@
-export async function GET(request) {
+export async function GET(request, context) {
 
   console.log(request);
+  console.log(context);
 
-  return Response.json(request)
+  return Response.json({test: "OK"})
   
 }
  
