@@ -18,12 +18,12 @@ async function start() {
 
     for (const employee of employees) {
         
-        console.log(employee);
-        /*
-        const u = await Test.findOrCreate({
-            where: {name, number}
+        //console.log(employee);
+        
+        const test = await Test.findOrCreate({
+            where: employee
         })
-        */
+
     }
 
 }
