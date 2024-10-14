@@ -1,6 +1,4 @@
 const { default: test } = require("node:test");
-const db = require("./db");
-const { where } = require("./db/sequelize");
 
 const employees = [
     {
@@ -9,12 +7,15 @@ const employees = [
     },{
         name: "Andrey Spiridonov",
         number: 2
+    }, {
+        name: "Igor Radionov",
+        number: 3
     }
 ]
 
-async function start() {
+const {Test} = require("../database/models")
 
-    const { Test } = await db();
+async function start() {
 
     for (const employee of employees) {
         
