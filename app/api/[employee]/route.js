@@ -1,10 +1,8 @@
-const {models} = require("../../../db/models")
+const {Test} = require("../../../database/models")
 
 export async function GET(request, context) {
 
   const employee = context.params.employee;
-
-  const {Test} = models;
 
   const item = await Test.findByPk(employee);
 

@@ -1,5 +1,6 @@
+const sequelize = require("./sequelize");
+
 const { Sequelize, DataTypes, Model } = require('sequelize');
-const sequelize = require("./sequelize.js");
 
 class Test extends Model {}
 
@@ -14,4 +15,6 @@ Test.init({
     sequelize
 });
 
-module.exports = sequelize
+module.exports = {
+    Test
+}
