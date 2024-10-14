@@ -1,8 +1,8 @@
 export async function GET(request) {
 
-  console.log(request.params);
+  console.log(request);
 
-  return Response.json({text: "Hello world!", error: 0})
+  return Response.json(request)
   
 }
  
