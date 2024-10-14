@@ -11,6 +11,7 @@ const employees = [
 ]
 
 (async () => {
+
     const {Test} = await db();
 
     for (const [name, number] of Object.entries(employees)) {
