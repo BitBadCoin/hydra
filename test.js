@@ -1,4 +1,6 @@
+const { default: test } = require("node:test");
 const db = require("./db");
+const { where } = require("./db/sequelize");
 
 const employees = [
     {
@@ -14,8 +16,11 @@ async function start() {
 
     const { Test } = await db();
 
-    for (const [name, number] of Object.entries(employees)) {
-        console.log({ name, number });
+    for (const user of Object.entries(employees)) {
+        
+        const user = await Test.findOrCreate({
+            where: user
+        })
     }
 
 }
