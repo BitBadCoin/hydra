@@ -16,9 +16,9 @@ async function start() {
 
     const { Test } = await db();
 
-    for (const [name, number] of Object.entries(employees)) {
+    for (const employee of employees) {
         
-        console.log({name, number});
+        console.log(employee);
         /*
         const u = await Test.findOrCreate({
             where: {name, number}
