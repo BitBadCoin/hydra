@@ -16,11 +16,14 @@ async function start() {
 
     const { Test } = await db();
 
-    for (const [name, number] of Object.entries(employees)) {
+    for (const {name, number} of Object.entries(employees)) {
         
+        console.log({name, number});
+        /*
         const u = await Test.findOrCreate({
             where: {name, number}
         })
+        */
     }
 
 }
