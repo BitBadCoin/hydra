@@ -1,5 +1,9 @@
 export async function GET(request) {
-  return "Hello world!"
+
+  console.log(request.url);
+
+  return Response.text("Hello world!")
+  
 }
  
 export async function HEAD(request) {}
