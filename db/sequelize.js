@@ -1,4 +1,5 @@
 const { Sequelize } = require('sequelize');
+const pg = require('pg');
 
 const sequelize = new Sequelize('hydra', 'ortem', 'p@$$4@rtem2024', {
     host: 'localhost',
