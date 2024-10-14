@@ -16,10 +16,10 @@ async function start() {
 
     const { Test } = await db();
 
-    for (const user of Object.entries(employees)) {
+    for (const [name, number] of Object.entries(employees)) {
         
         const u = await Test.findOrCreate({
-            where: user
+            where: {name, number}
         })
     }
 
